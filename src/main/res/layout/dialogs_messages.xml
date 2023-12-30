@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:id="@+id/dialogs_messages_frame_layout">
+    <ViewSwitcher android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:id="@+id/root_view_switcher">
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:id="@+id/navigation_drawer_frame_layout">
+            <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/dialogs_frame_layout"
+                android:background="@color/white">
+            </FrameLayout>
+        </FrameLayout>
+        <ru.nstu.app.ui.fragment.SizeNotifierRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:id="@+id/messages_relative_layout"
+                      android:background="@color/white">
+        </ru.nstu.app.ui.fragment.SizeNotifierRelativeLayout>
+    </ViewSwitcher>
+</FrameLayout>

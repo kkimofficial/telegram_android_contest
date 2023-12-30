@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:fillViewport="true"
+        android:id="@+id/code_confirmation_scroll_view">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fafafa"
+        android:orientation="vertical"
+        android:id="@+id/code_confirmation_linear_layout">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="24dp"
+            android:gravity="left"
+            android:text="@string/code_confirmation_description"
+            android:textColor="#919191"/>
+        <ru.nstu.app.ui.component.common.MaterialEditText
+            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp"
+            android:gravity="left|center_vertical"
+            android:id="@+id/code_confirmation_edit_text"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/red"
+            android:text="@string/incorrect_code"
+            android:visibility="gone"
+            android:id="@+id/code_confirmation_text_view"
+            />
+
+    </LinearLayout>
+
+</ScrollView>
